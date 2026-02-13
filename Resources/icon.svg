@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="key-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8E8E8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rounded background -->
+  <rect width="1024" height="1024" rx="200" fill="url(#bg-gradient)"/>
+
+  <!-- Keyboard base -->
+  <g transform="translate(512, 512)">
+    <!-- Main keyboard body -->
+    <rect x="-380" y="-180" width="760" height="360" rx="30" fill="#2C3E50" opacity="0.9"/>
+
+    <!-- Three keys -->
+    <!-- Left key -->
+    <g filter="url(#shadow)">
+      <rect x="-280" y="-120" width="150" height="150" rx="15" fill="url(#key-gradient)" stroke="#CCCCCC" stroke-width="3"/>
+      <text x="-205" y="-25" font-family="SF Pro Display, -apple-system, sans-serif" font-size="60" font-weight="bold" fill="#357ABD" text-anchor="middle">1</text>
+    </g>
+
+    <!-- Middle key -->
+    <g filter="url(#shadow)">
+      <rect x="-75" y="-120" width="150" height="150" rx="15" fill="url(#key-gradient)" stroke="#CCCCCC" stroke-width="3"/>
+      <text x="0" y="-25" font-family="SF Pro Display, -apple-system, sans-serif" font-size="60" font-weight="bold" fill="#357ABD" text-anchor="middle">2</text>
+    </g>
+
+    <!-- Right key -->
+    <g filter="url(#shadow)">
+      <rect x="130" y="-120" width="150" height="150" rx="15" fill="url(#key-gradient)" stroke="#CCCCCC" stroke-width="3"/>
+      <text x="205" y="-25" font-family="SF Pro Display, -apple-system, sans-serif" font-size="60" font-weight="bold" fill="#357ABD" text-anchor="middle">3</text>
+    </g>
+
+    <!-- Small indicator LEDs -->
+    <circle cx="-300" cy="100" r="12" fill="#00FF88" opacity="0.8"/>
+    <circle cx="-260" cy="100" r="12" fill="#FFD700" opacity="0.6"/>
+  </g>
+</svg>
