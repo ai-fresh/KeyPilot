@@ -32,14 +32,12 @@ Perfect for:
 
 ## 📸 Screenshots
 
-![Menu Bar](screenshots/menubar.png)
-*Menu bar with profile selection and quick actions*
-
-![Profile Editor](screenshots/editor.png)
-*Easy-to-use profile editor with key mapping*
-
-![Settings](screenshots/settings.png)
-*Configure auto-switching and launch at login*
+> 📝 Screenshots coming soon! Launch the app to see KeyPilot in action.
+>
+> The app features:
+> - Clean menu bar interface with profile selection
+> - Easy-to-use profile editor with key mapping
+> - Toggle controls for auto-switching and launch at login
 
 ## 🔧 Hardware Requirements
 
@@ -57,7 +55,7 @@ This application is designed for **3-button programmable keyboards**. Your keybo
 ## 📦 Installation
 
 ### Option 1: Download Release
-1. Download the latest `KeyPilot.app` from [Releases](https://github.com/yourusername/KeyPilot/releases)
+1. Download the latest `KeyPilot.app` from [Releases](https://github.com/ai-fresh/KeyPilot/releases)
 2. Move `KeyPilot.app` to your `/Applications` folder
 3. Launch KeyPilot from Applications or Spotlight
 
@@ -70,7 +68,7 @@ This application is designed for **3-button programmable keyboards**. Your keybo
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/KeyPilot.git
+git clone https://github.com/ai-fresh/KeyPilot.git
 cd KeyPilot
 
 # Build the application
